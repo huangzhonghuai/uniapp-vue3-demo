@@ -1,0 +1,40 @@
+{
+  "name": "demo",
+  "debug": false,
+  "appid": "",
+  "versionName": "1.0.0",
+  "versionCode": "100",
+  "transformPx": true,
+  "h5": {
+    "router": {
+      "mode": "history"
+    },
+    "optimization": {
+      "treeShaking": {
+        "enable": true
+      }
+    }
+  },
+  "mp-weixin": {
+    "appid": "wx6fb7133e97405c0b",
+    "setting": {
+      "es6": false,
+      "enhance": false,
+      "postcss": true,
+      "urlCheck": false,
+      "minified": true,
+      "minifyWXSS": true,
+      "minifyWXML": true,
+      "compileHotReLoad": false,
+      "useIsolateContext": true,
+      "ignoreUploadUnusedFiles": true,
+      "userConfirmedUseIsolateContext": true
+    },
+    "optimization": {
+      "subPackages": true
+    },
+    "lazyCodeLoading": "requiredComponents",
+    "usingComponents": true
+  },
+  "vueVersion": "3"
+}
