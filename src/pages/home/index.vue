@@ -1,4 +1,5 @@
 <template>
+  <uni-data-checkbox v-model="state.radio1" :localdata="state.sex" />
   <view>打开分包页面</view>
   <uni-row>
     <uni-col :key="item" v-for="item of state.test">{{item}}</uni-col>
@@ -40,7 +41,18 @@
         now: '',
         list: ['1', '2', '3', '4', '5'],
         test: ['11', '22', '33', '44', '55'],
-        auth: false
+        auth: false,
+        radio1: 0,
+        sex: [{
+          text: '男',
+          value: 0
+        }, {
+          text: '女',
+          value: 1
+        }, {
+          text: '未知',
+          value: 2
+        }]
       })
       const appStore = useAppStore()
       const {user, token} = storeToRefs(appStore)

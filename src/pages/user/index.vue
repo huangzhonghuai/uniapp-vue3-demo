@@ -28,7 +28,7 @@
 
   import {useAppStore} from '/@/store/modules/app'
 
-  const state = reactive({
+  let state = reactive({
     now: '',
     list: ['1', '2', '3', '4', '5'],
     test: ['11', '22', '33', '44', '55'],
